@@ -1,0 +1,12 @@
+li {
+    list-style: none;
+}
+
+
+.card-content {
+    padding-left: 15px;
+}
+
+img {
+    height: 10rem;
+}
