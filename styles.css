@@ -1,10 +1,22 @@
+body {
+    font-family: 'News Cycle', sans-serif;
+}
+
 li {
     list-style: none;
 }
 
+header {
+ text-align: center;
+}
+
+.card-header {
+    min-height: 13em;
+}
 
 .card-content {
-    padding-left: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
 }
 
 img {

@@ -13,24 +13,24 @@ async function getNews() {
 
 
 function renderArticle(article) {
+    if (article.author === null) return ''
    return `
     
-            <div class="card" style="width: 20rem;">
-                <div class="card-header">${article.title}</div>
+            <div class="card" style="width: 20rem; margin: 1rem;">
+                <div class="card-header">
+                    <h4>${article.title}</h4>
+                </div>
                 <img class="card-img-top" src="${article.urlToImage}" alt="Card image cap">
                 <div class="card-body">
-                    <div class="row card-content"></div>
-                        <a href="${article.url}">
-    
-                        </a>
-                    </div>
                     <div class="row card-content">
                         <div class="col-md-6">
                         <h6 class="card-title">${article.author}</h6>
                         </div>
                         <div class="col-md-6">
-                            <h6 class="card-title">${article.source.name}</h6>
-                        </div>
+                            <a href="${article.url}">
+                                <h6 class="card-title">${article.source.name}</h6>
+                            </a>
+                            </div>
                     </div>
                     <div class="row card-content">
                         <p>${article.description}</p>
